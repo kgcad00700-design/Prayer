@@ -18,12 +18,19 @@ export interface RepresentativeSettings {
   prayerTone: '전통적' | '현대적';
   prayerDuration: string;
   graceAndSalvation: string;
+  includeGraceAndSalvation: boolean;
   confessionAndForgiveness: string;
+  includeConfessionAndForgiveness: boolean;
   nationWellbeing: string;
+  includeNationWellbeing: boolean;
   churchNeeds: string;
+  includeChurchNeeds: boolean;
   specialGraceAndHealing: string;
+  includeSpecialGraceAndHealing: boolean;
   preacherFilling: string;
+  includePreacherFilling: boolean;
   additionalRequests: string;
+  voiceGender: 'male' | 'female';
   attachments?: PrayerAttachment[];
 }
 
@@ -34,6 +41,7 @@ export interface FuneralSettings {
   familyComfort: string;
   hopeOfResurrection: string;
   additionalRequests: string;
+  voiceGender: 'male' | 'female';
   attachments?: PrayerAttachment[];
 }
 
